@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	.container.greyed-page
+		.row.justify-content-center
+			img.logo.m-4(src='./images/salvation-army-logo.png' alt='Salvation Army Logo')
+			h1.text-center.m-5.mt-3 Salvation Army Resident Services Tracker
+		.row.justify-content-center
+			form.form.form-horizontal.col-6.p-5
+				fieldset
+					// Form Name
+					legend.mt-0.mb-4 Login
+					// Text input
+					.form-group.mt-3
+						label.control-label.pb-2(for='emailInput') Email Address
+						input#emailInput.form-control.p-2(name='emailInput' type='email' placeholder='email@domain.com' required='')
+					// Text input
+					.form-group.mt-3
+						label.control-label.pb-2(for='passwordInput') Password
+						input#passwordInput.form-control.input-md.p-2(name='passwordInput' type='password' placeholder='password' required='')
+					// Button
+					button#loginBtn.btn.btn-primary.mt-4.mb-4(type='submit' name='loginBtn') Login
+					.form-group.mt-3
+						a(href='#').me-5 Forgot Password?
+						a(href='register.html') Need an Account?

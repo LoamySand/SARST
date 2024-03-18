@@ -1,0 +1,23 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+
+.logo{
+    max-width: 20%;
+}
+
+.greyed-page {
+    background-color: #eeee;
+    max-width: 100%;
+    padding-bottom: 10rem;
+    margin: 0;
+}
+
+form {
+    background-color: white;
+}
